@@ -7,7 +7,7 @@ const env = require('dotenv');
 if (process.env.NODE_ENV) console.log('This is running from docker container.');
 else {
     env.config();
-    console.log(process.env.LOCAL_ENV);
+    console.log('This is running locally.');
 }
 
 const app = express()
@@ -20,7 +20,9 @@ const budgetRoutes = require('./routes/budget');
 app.use(budgetRoutes);
 
 // Views
-app.set('views', 'MVC/views');
+app.set('views', 'MVC/Views');
 app.set('view engine', 'ejs');
 
-app.listen(3000);
+const PORT = process.env.PORT || 3000;
+const HOST = process.env.HOST || '127.0.0.1';
+app.listen(PORT, HOST);
