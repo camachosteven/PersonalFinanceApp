@@ -4,7 +4,8 @@ const bodyParser = require('body-parser');
 const env = require('dotenv');
 
 // used to determine environment that it's running on
-if (process.env.NODE_ENV) console.log('This is running from docker container.');
+if (process.env.NODE_ENV === 'production') console.log('This is running from Heroku app.')
+if (process.env.NODE_ENV === 'development') console.log('This is running from docker container.');
 else {
     env.config();
     console.log('This is running locally.');

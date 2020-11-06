@@ -1,12 +1,10 @@
 FROM node:12
 
 # Environment Variables
+# *Heroku specifies PORT*
 ENV NODE_ENV=development
-ENV PORT=8000
 ENV HOST=0.0.0.0
 
-# make port public
-EXPOSE ${PORT}
 # Create a separate folder *WITHIN* Image
 WORKDIR /app
 # Copy the .json files into the working directory of the image
