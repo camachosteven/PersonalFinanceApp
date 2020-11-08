@@ -2,7 +2,7 @@ FROM node:12
 
 # Environment Variables
 # *Heroku specifies PORT*
-ENV NODE_ENV=development
+ENV NODE_ENV=production
 ENV HOST=0.0.0.0
 
 # Create a separate folder *WITHIN* Image
