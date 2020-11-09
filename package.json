@@ -5,8 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
-    "dev": "nodemon server.js --ignore ./MVC/Views/static",
+    "dev": "nodemon server.js --ignore ./MVC/Views",
     "build": "node server.js"
   },
   "repository": {

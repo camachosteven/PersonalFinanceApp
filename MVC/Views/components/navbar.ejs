@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="img/logo.png" height="35px" width="35px" alt="Logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a href="/" class="nav-link <%= active === 'Summary' ? 'active': '' %>">Summary</a>
+        </li>
+        <li class="nav-item">
+            <a href="/budget" class="nav-link <%= active === 'Budget' ? 'active': '' %>">Budget</a>
+        </li>
+        <li class="nav-item">
+            <a href="/income" class="nav-link <%= active === 'Income' ? 'active': '' %>">Income</a>
+        </li>
+        <li class="nav-item">
+            <a href="/bills" class="nav-link <%= active === 'Bills' ? 'active': '' %>">Bills</a>
+        </li>
+        <li class="nav-item">
+            <a href="/savings" class="nav-link <%= active === 'Savings' ? 'active': '' %>">Savings</a>
+        </li>
+        <li class="nav-item">
+            <a href="/goals" class="nav-link <%= active === 'Goals' ? 'active': '' %>">Goals</a>
+        </li>
+        <li class="nav-item">
+            <a href="/transactions" class="nav-link <%= active === 'Transactions' ? 'active': '' %>">Transactions</a>
+        </li>
+        <li class="nav-item">
+            <a href="/make-payments" class="nav-link <%= active === 'Make Payments' ? 'active': '' %>">Make Payments</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
